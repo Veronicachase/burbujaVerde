@@ -1,0 +1,38 @@
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 20px 0;
+  line-height: 1.5;
+  color: #428642;
+  letter-spacing: 1px;
+}
+.quienes-somos-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 20px 30px;
+}
+.quienes-somos-texto > h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: goldenrod;
+}
+
+.quienes-somos-texto > p {
+  line-height: 1.5;
+  font-weight: 200;
+}
+
+.quienes-somos-div {
+  display: flex;
+  width: 80%;
+  margin: 30px auto;
+  gap: 20px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+.quienesSomos-img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}

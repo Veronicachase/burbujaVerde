@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contacto-texto {
+  text-align: center;
+  font-size: 30px;
+  width: 70vw;
+  margin: 30px auto;
+  font-family: "tangerine";
+  letter-spacing: 1px;
+}
+
+span {
+  color: #428642;
+  font-weight: bold;
+}
+
+.contacto-lista {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  margin-bottom: 30px;
+  background-color: goldenrod;
+  padding: 30px;
+}
+.contacto-lista > li {
+  display: flex;
+  align-items: center;
+}
+
+.contacto-icono {
+  margin-right: 10px;
+}
+
+/* aqui pongo los datos de mi formulario de contacto */
+
+form {
+  display: flex;
+  width: 70vw;
+  margin: 10px auto;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.formFlex {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.formDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}

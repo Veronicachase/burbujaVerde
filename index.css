@@ -1,0 +1,53 @@
+/* Aqui va a comenzar el main- la parte de texto y otros detalles  */
+
+.texto-home-1 {
+  width: 60vw;
+  text-align: center;
+  margin: 20px auto;
+  font-weight: 200;
+}
+.color {
+  color: #428642;
+}
+/* Tarjetas de servicios y etc*/
+
+.tarjetas {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 20px 20px 20px;
+  padding: 20px;
+}
+
+.tarjeta {
+  width: 30%;
+  height: auto;
+  background: white;
+  box-shadow: 1px 1px 10px 1px #ccc;
+  border-radius: 10px;
+}
+
+.tarjeta:hover {
+  transform: scale(1.02);
+  box-shadow: 1px 1px 10px 1px #7a8e7a;
+  transition: all 0.3s ease;
+}
+
+.tarjeta > img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  position: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.tarjeta-texto {
+  padding: 20px;
+}
+.tarjeta-texto > p {
+  font-weight: 200;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+.tarjeta-texto > h3 {
+  margin: 10px 0;
+}
