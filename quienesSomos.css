@@ -36,3 +36,41 @@ h1 {
   height: auto;
   object-fit: cover;
 }
+/* Galeria de trabajadores */
+
+section {
+  margin: 40px 0;
+  background-color: #f0f0f0;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.galeria-trabajadores {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.galeria-trabajadores img {
+  max-width: 200px;
+  height: auto;
+  min-height: 140px;
+  border-radius: 10px;
+}
+.galeria-trabajadores img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.nuestro-equipo-titulo {
+  text-align: center;
+  margin: 40px 20px;
+  color: #428642;
+}
+.video-corporativo {
+  width: 80%;
+  margin: 20px auto;
+}

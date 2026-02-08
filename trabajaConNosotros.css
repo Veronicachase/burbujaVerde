@@ -1,4 +1,4 @@
-h3 {
+.titulo2-form {
   text-align: center;
   font-family: "Tangerine" cursive;
   letter-spacing: 1px;
@@ -9,6 +9,15 @@ form {
   margin: 2em auto;
   width: 80%;
   height: auto;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  border: 1px solid #4286425d;
+  border-radius: 10px;
 }
 
 .contenedor-flex {
@@ -31,6 +40,11 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
+.button:hover {
+  background-color: white;
+  color: #428642;
+}
+
 select {
   width: 100%;
   margin-bottom: 40px;
@@ -40,7 +54,7 @@ select {
   border-radius: 10px;
 }
 
-h4 {
+.envianos-email {
   text-align: center;
   margin-top: 2em;
   color: #428642;

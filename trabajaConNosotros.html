@@ -40,7 +40,7 @@
             <div class="titulo-frame ">
 
                 <picture>
-                    <img src="img/logo.png" alt="Logo de Burbuja Verde" width="300px">
+                    <img src="img/logo.png" alt="Logo de Burbuja Verde" width="300">
                 </picture>
 
                 <div class="titulo-texto-frame ">
@@ -54,61 +54,107 @@
 
     <main>
         <h1>¿Te gustaría trabajar con nosotros?</h1>
-        <h3>Rellena el siguiente formulario y nos pondremos en contacto contigo.</h3>
+        <h2 class="titulo2-form">Rellena el siguiente formulario y nos pondremos en contacto contigo.</h2>
 
 
-        <form action="norecuerdoquevaAqui.nose" method="post">
+        <form method="post">
+
+            <fieldset>
+                <legend>Datos personales</legend>
 
 
-
-            <div class="contenedor-flex">
-                <div>
+                <div class="contenedor-flex">
                     <div>
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+                        <div>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+                        </div>
+
+                        <div>
+                            <label for="apellido">Apellido</label>
+                            <input type="text" id="apellido" name="apellido" placeholder="Apellido completo" required>
+                        </div>
                     </div>
 
                     <div>
-                        <label for="apellido">Apellido</label>
-                        <input type="text" id="apellido" name="apellido" placeholder="Apellido completo" required>
+                        <div>
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                        </div>
+
+                        <div>
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Número de teléfono" required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <select name="provincia" id="provincia">
+                            <option value="">Selecciona tu provincia</option>
+                            <option value="Malaga">Málaga</option>
+                            <option value="Jaén">Jaén</option>
+                            <option value="Granada">Granada</option>
+                        </select>
+                    </div>
+
+                    <div>
+
+                        <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx">
+                    </div>
+
+
+                </div>
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Formación</legend>
+                <div class="contenedor-flex">
+                    <div class="formación">
+                        <label for="formacion">Formación académica</label>
+                        <input type="text" id="formacion" name="formacion" placeholder="Indica tu formación académica">
+                    </div>
+                    <select name="nivel-estudios" id="nivel-estudios">
+                        <option value="">Selecciona tu nivel de estudios</option>
+                        <option value="primaria">Primaria</option>
+                        <option value="secundaria">Secundaria</option>
+                        <option value="bachillerato">Bachillerato</option>
+                        <option value="universidad">Universidad</option>
+                    </select>
+                    <div>
+                        <label for="otros-estudios">Otros estudios relevantes</label>
+                        <input type="text" id="otros-estudios" name="otros-estudios"
+                            placeholder="Otros estudios relevantes">
                     </div>
                 </div>
 
-                <div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Idiomas</legend>
+                <div class="contenedor-flex">
                     <div>
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                        <label for="idiomas">Idiomas</label>
+                        <input type="text" id="idiomas" name="idiomas" placeholder="Idiomas que hablas">
                     </div>
 
-                    <div>
-                        <label for="telefono">Teléfono</label>
-                        <input type="tel" id="telefono" name="telefono" placeholder="Número de teléfono" required>
-                    </div>
-                </div>
-
-                <div>
-                    <select name="provincia" id="provincia">
-                        <option value="">Selecciona tu provincia</option>
-                        <option value="Malaga">Málaga</option>
-                        <option value="Jaén">Jaén</option>
-                        <option value="Granada">Granada</option>
+                    <select name="nivel-idioma" id="nivel-idioma">
+                        <option value="">Selecciona el nivel</option>
+                        <option value="nada">Nada</option>
+                        <option value="básico">Básico</option>
+                        <option value="intermedio">Intermedio</option>
+                        <option value="avanzado">Avanzado</option>
+                        <option value="nativo">Nativo</option>
                     </select>
                 </div>
 
-                <div>
-
-                    <input type="file" id="cv" name="cv" placeholder="Curriculum Vitae" accept=".pdf,.doc,.docx">
-                </div>
-
-
-            </div>
-
+            </fieldset>
             <textarea name="Comentarios" id="mensaje" placeholder="Escriba aquí la información más relevante" rows="10"
                 cols="50"></textarea>
             <button type="submit">Enviar </button>
 
         </form>
-        <h4>O envíanos un email a <span>info@burbujaverde.com</span></h4>
+        <p class="envianos-email">O envíanos un email a <span>info@burbujaverde.com</span></p>
     </main>
 
     <footer>
@@ -117,6 +163,7 @@
             <div>
 
                 <h2 class="footer-encabezado">Burbuja Verde</h2>
+                <p>También puedes visitarnos en:</p>
                 <ul class="footerlist">
                     <li> <img src="img/Icons/location.svg" alt="Icono de dirección">Dirección</li>
                     <li> <img src="img/Icons/mobile_30dp.svg" alt="Icono de teléfono"> Teléfono</li>
